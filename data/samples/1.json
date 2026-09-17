@@ -1,0 +1,8 @@
+{
+  "sample_id": 1,
+  "input": {
+    "text": "我今天真的很累，但是做了很多事情，感觉很充实。",
+    "image_path": "media/images/1.jpg",
+    "audio_path": null
+  }
+}

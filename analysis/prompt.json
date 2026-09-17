@@ -1,0 +1,15 @@
+{
+  "text": {
+    "analysis_prompt": "请分析以下文本，给出内容描述和情感推理。只返回 JSON：{\"description\":\"...\",\"reasoning\":\"...\"}。文本：$text",
+    "result_prompt": "根据原始文本、description 和 reasoning，给出一至三个开放词汇情感。只返回 JSON：{\"result\":[\"情感1\",\"情感2\"]}。原始文本：$text；description：$description；reasoning：$reasoning"
+  },
+  "visual": {
+    "analysis_prompt": "请分析当前图片，描述人物的表情、姿态和场景，并给出情感推理。只返回 JSON：{\"description\":\"...\",\"reasoning\":\"...\"}",
+    "result_prompt": "根据原始图片、description 和 reasoning，给出一至三个开放词汇情感。只返回 JSON：{\"result\":[\"情感1\",\"情感2\"]}。description：$description；reasoning：$reasoning"
+  },
+  "audio": {
+    "analysis_prompt": "请分析当前音频，描述语速、音量、语调、停顿等声音特征，并给出情感推理。只返回 JSON：{\"description\":\"...\",\"reasoning\":\"...\"}",
+    "result_prompt": "根据原始音频、description 和 reasoning，给出一至三个开放词汇情感。只返回 JSON：{\"result\":[\"情感1\",\"情感2\"]}。description：$description；reasoning：$reasoning"
+  }
+}
+
