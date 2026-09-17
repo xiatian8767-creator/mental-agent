@@ -2,6 +2,7 @@ from analysis.audio_analysis import AudioAnalysis
 from analysis.text_analysis import TextAnalysis
 from analysis.visual_analysis import VisualAnalysis
 from input import Input
+from judge.Judge_Agent import JudgeAgent
 
 
 input_processor = Input(
@@ -20,3 +21,9 @@ visual_agent.run()
 
 audio_agent = AudioAnalysis(analysis_path=analysis_path)
 audio_agent.run()
+
+judge_agent = JudgeAgent(
+    analysis_path=analysis_path,
+    prompt_path="judge/prompt",
+)
+judge_agent.run()
